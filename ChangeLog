@@ -1,0 +1,65 @@
+2012-02-20 Jonathan Heilmann <mail@jonathan-heilmann.de>
+    * Initial release.
+
+2012-02-20 Jonathan Heilmann <mail@jonathan-heilmann.de>
+    * corrected some bugs evoked by changed extension key
+
+2012-02-24 Jonathan Heilmann <mail@jonathan-heilmann.de>
+    * some bugfixes (ext_typoscript_setup.txt) was not used
+    * with 'plugin.tt_news.tx_jhsocialshareprivacyttnews_pi1.info_link = off' you are now able to hide the information button
+
+2012-02-25 Jonathan Heilmann <mail@jonathan-heilmann.de>
+    * added manuel
+
+2012-03-16 Jonathan Heilmann <mail@jonathan-heilmann.de>
+    * bugfix (missing parameter in pi1/class.tx_jhsocialshareprivacyttnews_pi1.php in line 109)
+
+2012-04-05 Jonathan Heilmann <mail@jonathan-heilmann.de>
+    * updated manuel
+    * updated socialshareprivacy plugin to version 1.4
+    * added project on forge.typo3.org (http://forge.typo3.org/projects/extension-jh_socialshareprivacy_ttnews)
+    * added extension icon
+
+2012-12-02 Jonathan Heilmann <mail@jonathan-heilmann.de>
+    * resolves a javascript error in file "jquery.socialshareprivacy.js" on line 130 (bug #43524)
+
+2013-01-19 Jonathan Heilmann <mail@jonathan-heilmann.de>
+    * link for facebook iframe is now forced to be absolute
+    * resolved some bugs when reading the typoscript setup settings
+    * if 'plugin.tt_news.tx_jhsocialshareprivacyttnews_pi1.socialshareprivacy_path' is empty, the jquery.socialshareprivacy.js won't be included
+      Use this, if the extension 'socialshareprivacy' is used. Otherwise you will have a conflict.
+    * updated manual
+    * set extension-state to beta
+
+
+2013-01-22 Jonathan Heilmann <mail@jonathan-heilmann.de>
+    * set 'plugin.tt_news.tx_jhsocialshareprivacyttnews_pi1.css_path = ' to turn off css of extension
+
+2013-01-22 Jonathan Heilmann <mail@jonathan-heilmann.de>
+    * fixed bug for setting the default css_path
+
+2013-04-29 Jonathan Heilmann <mail@jonathan-heilmann.de>
+    * jquery was not in EXT dir - now in folder res/
+    * moved template.js to folder res/
+    * added setup 'plugin.tt_news.tx_jhsocialshareprivacyttnews_pi1.jquery_path' to change path for jQuery
+    * updated manual
+    * changed extension state to stable
+
+2013-05-03 Jonathan Heilmann <mail@jonathan-heilmann.de>
+    * updated jquery.socialshareprivacy.js to work with jQuery version > 1.7.x
+    * added jquery-1.6.4.min.js to provide jQuery for jquery.socialshareprivacy.deprecated.js
+    * added setup 'plugin.tt_news.tx_jhsocialshareprivacyttnews_pi1.use_socialshareprivacy_deprecated' to use jquery.socialshareprivacy.deprecated.js
+    * added setup 'plugin.tt_news.tx_jhsocialshareprivacyttnews_pi1.socialshareprivacy_deprecated_path'
+    * added setup 'plugin.tt_news.tx_jhsocialshareprivacyttnews_pi1.jquery_old_path' to change path to an old jQuery version
+    * updated manual
+
+2014-08-02 Jonathan Heilmann <mail@jonathan-heilmann.de>
+	* Added dependencies.
+	* Converted manual to rest documentation.
+
+2015-01-24 Jonathan Heilmann <mail@jonathan-heilmann.de>
+	* Rewritten for TYPO3 CMS 6.2 LTS
+	* Moved JavaScript Libs to footer and dynamic JavaScript to inline
+	* Moved translation to setup and removed locallang.xml
+	* Removed deprecated JavaScript in setup
+	* Updated documentation

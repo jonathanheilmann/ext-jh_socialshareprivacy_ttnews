@@ -1,0 +1,86 @@
+plugin.tt_news.tx_jhsocialshareprivacyttnews_pi1 {
+    # Standardeinstellungen der Extension
+    template = EXT:jh_socialshareprivacy_ttnews/Resources/Private/Templates/template.js
+
+    socialshareprivacy_path = EXT:jh_socialshareprivacy_ttnews/Resources/Public/Contrib/socialshareprivacy/jquery.socialshareprivacy.js
+    sspInlineFunctions_path = EXT:jh_socialshareprivacy_ttnews/Resources/Public/Javascript/jquery.sspInlineFunctions.min.js
+
+    use_jquery_from_extension = 0
+    jquery_path = EXT:jh_socialshareprivacy_ttnews/Resources/Public/Javascript/jquery-1.11.2.min.js
+
+    # Standardeinstellungen des Skripts
+    # Nur eintragen, wenn die default des Skripts geändert werden sollen.
+    info_link =
+    cookie_expires =
+    css_path = EXT:jh_socialshareprivacy_ttnews/Resources/Public/Contrib/socialshareprivacy/socialshareprivacy/socialshareprivacy.css
+    uri =
+
+    services {
+        facebook {
+            # einschalten: on, ausschalten: off
+            status=on
+            # URL zum Bild
+            dummy_img=EXT:jh_socialshareprivacy_ttnews/Resources/Public/Contrib/socialshareprivacy/socialshareprivacy/images/dummy_facebook.png
+            # on / off
+            perma_option=on
+            # optional
+            display_name=Facebook
+            # wird ans Ende der URL gehängt für Tracking. Optional
+            referrer_track=
+            # Möglich: recommend (empfehlen) oder like (Gefällt mir)
+            action=recommend
+            # Sprache - Syntax: de_DE.
+            language=de_DE
+
+        }
+        twitter {
+            # einschalten: on, ausschalten: off
+            status=on
+            # URL zum Bild
+            dummy_img=EXT:jh_socialshareprivacy_ttnews/Resources/Public/Contrib/socialshareprivacy/socialshareprivacy/images/dummy_twitter.png
+            # on / off
+            perma_option=on
+            # optional
+            display_name=Twitter
+            # wird ans Ende der URL gehängt für Tracking. Optional
+            referrer_track=
+            # Sprache - Syntax: de, en.
+            language=en
+        }
+        gplus {
+            # einschalten: on, ausschalten: off
+            status=on
+            # URL zum Bild
+            dummy_img=EXT:jh_socialshareprivacy_ttnews/Resources/Public/Contrib/socialshareprivacy/socialshareprivacy/images/dummy_gplus.png
+            # on / off
+            perma_option=on
+            # optional
+            display_name=Google+
+            # wird ans Ende der URL gehängt für Tracking. Optional
+            referrer_track=
+            # Sprache - Syntax: de, en.
+            language=de
+        }
+    }
+
+    # Sprachen
+    _LOCAL_LANG {
+    	de {
+        ## in locallang definiert, kann hier überschrieben werden.
+         txt_help = Wenn Sie diese Felder durch einen Klick aktivieren, werden Informationen an Facebook, Twitter oder Google in die USA übertragen und unter Umständen auch dort gespeichert. Näheres erfahren Sie durch einen Klick auf das i.
+         settings_perma = Dauerhaft aktivieren und Datenübertragung zustimmen:
+         fb_txt_info=Klicks für mehr Datenschutz: Erst wenn Sie hier klicken, wird der Button aktiv und Sie können Ihre Empfehlung an Facebook senden. Schon beim Aktivieren werden Daten an Dritte übertragen – siehe i.
+         txt_fb_off=nicht mit Facebook verbunden
+         txt_fb_on=mit Facebook verbunden
+
+         twitter_txt_info=2 Klicks für mehr Datenschutz: Erst wenn Sie hier klicken, wird der Button aktiv und Sie können Ihre Empfehlung an Twitter senden. Schon beim Aktivieren werden Daten an Dritte übertragen – siehe i.
+         txt_twitter_off=nicht mit Twitter verbunden
+         txt_twitter_on=mit Twitter verbunden
+
+         gplus_txt_info=2 Klicks für mehr Datenschutz: Erst wenn Sie hier klicken, wird der Button aktiv und Sie können Ihre Empfehlung an Google+ senden. Schon beim Aktivieren werden Daten an Dritte übertragen – siehe i.
+         txt_gplus_off=nicht mit Google+ verbunden
+         txt_gplus_on=mit Google+ verbunden
+      }
+      default < .de
+    }
+}
