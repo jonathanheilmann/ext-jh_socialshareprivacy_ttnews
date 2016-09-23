@@ -5,7 +5,7 @@ namespace Heilmann\JhSocialshareprivacyTtnews\Hooks;
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2013-2015 Jonathan Heilmann <mail@jonathan-heilmann.de>
+*  (c) 2013-2016 Jonathan Heilmann <mail@jonathan-heilmann.de>
 *  All rights reserved
 *
 *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -25,15 +25,11 @@ namespace Heilmann\JhSocialshareprivacyTtnews\Hooks;
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 
-use \TYPO3\CMS\Core\Utility\GeneralUtility;
 use \TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 /**
- *
- *
- * @author    Jonathan Heilmann <mail@jonathan-heilmann.de>
- * @package    TYPO3
- * @subpackage    tx_jhsocialshareprivacyttnews
+ * Class TxTtNews
+ * @package Heilmann\JhSocialshareprivacyTtnews\Hooks
  */
 class TxTtNews extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin {
 	var $prefixId      = 'TxTtNews';        // Same as class name
@@ -44,7 +40,7 @@ class TxTtNews extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin {
 	/**
 	 * The extraItemMarkerProcessor function from tt_news
 	 *
-	 * @return    socialshareprivacy bar
+	 * @return array    socialshareprivacy bar
 	 */
 	public function extraItemMarkerProcessor($markerArray, $row, $conf, &$pObj) {
 		$this->conf = $pObj->conf['tx_jhsocialshareprivacyttnews_pi1.']; //required to load LocalLang
@@ -159,10 +155,10 @@ sspInlineFunctions.push(function($) {
 	/**
 	 * returns given typoscript-value or default if typoscript empty: default settings
 	 *
-	 * @param  string        setting
-	 * @param  string        default value
-	 * @param  array
-	 * @return void
+	 * @param  string       $setting
+	 * @param  string       $default value
+     * @param  array        $pObj
+     * @return string
 	 **/
 	private function getSetting($setting, $default, $pObj) {
 		$lConf = $pObj->conf['tx_jhsocialshareprivacyttnews_pi1.'];
@@ -176,10 +172,10 @@ sspInlineFunctions.push(function($) {
 	/**
 	 * returns given typoscript-value or default if typoscript empty: facebook settings
 	 *
-	 * @param  string        setting
-	 * @param  string        default value
-	 * @param  array
-	 * @return void
+	 * @param  string       $setting
+	 * @param  string       $default value
+     * @param  array        $pObj
+     * @return string
 	 **/
 	private function getSettingFB($setting, $default, $pObj) {
 		$lConf = $pObj->conf['tx_jhsocialshareprivacyttnews_pi1.']['services.']['facebook.'];
@@ -193,9 +189,10 @@ sspInlineFunctions.push(function($) {
 	/**
 	 * returns given typoscript-value or default if typoscript empty: twitter settings
 	 *
-	 * @param  string        setting
-	 * @param  string        default value
-	 * @return void
+	 * @param  string       $setting
+	 * @param  string       $default value
+     * @param  array        $pObj
+     * @return string
 	 **/
 	private function getSettingTW($setting, $default, $pObj) {
 		$lConf = $pObj->conf['tx_jhsocialshareprivacyttnews_pi1.']['services.']['twitter.'];
@@ -209,10 +206,10 @@ sspInlineFunctions.push(function($) {
 	/**
 	 * returns given typoscript-value or default if typoscript empty: Google+-Settings
 	 *
-	 * @param  string        setting
-	 * @param  string        default value
-	 * @param  array
-	 * @return void
+	 * @param  string       $setting
+	 * @param  string       $default value
+	 * @param  array        $pObj
+     * @return string
 	 **/
 	private function getSettingGP($setting, $default, $pObj) {
 		$lConf = $pObj->conf['tx_jhsocialshareprivacyttnews_pi1.']['services.']['gplus.'];
@@ -224,5 +221,3 @@ sspInlineFunctions.push(function($) {
 	}
 
 }
-
-?>
