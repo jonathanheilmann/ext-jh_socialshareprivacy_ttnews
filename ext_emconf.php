@@ -14,7 +14,7 @@ $EM_CONF[$_EXTKEY] = array (
 	'title' => 'socialshareprivacy for tt_news',
 	'description' => 'Adds the heise.de socialshareprivacy plugin to each tt_news item. Marker: ###SOCIALPRIVACYSHARE###',
 	'category' => 'plugin',
-	'version' => '1.0.0',
+	'version' => '1.1.0',
 	'state' => 'stable',
 	'uploadfolder' => true,
 	'createDirs' => '',
@@ -26,7 +26,7 @@ $EM_CONF[$_EXTKEY] = array (
 	array (
 		'depends' =>
 		array (
-			'typo3' => '6.2.0-6.2.99',
+			'typo3' => '6.2.0-7.6.99',
 			'tt_news' => '3.6.0-',
 		),
 		'conflicts' =>
