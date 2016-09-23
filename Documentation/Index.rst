@@ -22,12 +22,12 @@ Extension Key: jh\_socialshareprivacy\_ttnews
 
 Language: en
 
-Version: 1.0.0
+Version: 1.1.0
 
 Keywords: socialshareprivacy, heise, facebook, twitter, google+,
 google plus
 
-Copyright 2013-2015, Jonathan Heilmann, <mail@jonathan-heilmann.de>
+Copyright 2013-2016, Jonathan Heilmann, <mail@jonathan-heilmann.de>
 
 This document is published under the Open Content License
 

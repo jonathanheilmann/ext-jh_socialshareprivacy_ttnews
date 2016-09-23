@@ -31,6 +31,15 @@ ChangeLog
 
 
  - :Version:
+         1.1.0
+
+   :Changes:
+         \* Use https scheme for twitter and facebook (google supports https scheme already)
+
+         \* Updated dependencies
+
+
+ - :Version:
          1.0.0
 
    :Changes:

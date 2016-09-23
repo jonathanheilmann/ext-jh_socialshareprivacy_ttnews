@@ -63,3 +63,7 @@
 	* Moved translation to setup and removed locallang.xml
 	* Removed deprecated JavaScript in setup
 	* Updated documentation
+
+2016-09-23  Jonathan Heilmann <mail@jonathan-heilmann.de>
+    * Use https scheme for twitter and facebook (google supports https scheme already)
+    * Updated dependencies
